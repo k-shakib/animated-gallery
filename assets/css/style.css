@@ -1,0 +1,42 @@
+.animatedImageGallery{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.galleryName{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-family: sans-serif;
+}
+.gallery{
+    height: 60vh;
+    width: 90%;
+    display: flex;
+    margin: 2% auto 0;
+    box-sizing: border-box;
+}
+.imageBox{
+    margin: 0 0.5%;
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: 0.5s;
+}
+.imageBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.imageBox:hover{
+    flex-basis: 50%;
+}
+.active{
+    flex-basis: 50%;
+}
+.gallery:hover .active{
+    flex-basis: 0;
+}
+.gallery:hover .active:hover{
+    flex-basis: 50%;
+}
